@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "my-accountant-178109",
+  "private_key_id": "d21488ab9f23a4304f9ea8c19a304f3500b355ce",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1xYrLvVZGhX+l\nDlVsuOXOR1N3CfY+M7FhslPgwHfDGE21FJeif5m0iMQGL76pTLSzu8xxU75YRBNH\nubFlClcmjbCkkgkzT6xxOdWpnFvdttLaUh7DOjDJxca+W9mvFskUKSl+czKTy73G\neyHgVaAfOj4pOFSFmHTlEdwex3hZPmtR3PUWfMtN9lQ05gQc5/KDnMMjXqtwLl75\nqt6ft9Y1ClNg2rVXs0WJajDsxiwoZvjirAllZh9UIlT5viLaVce3ZZf6aKuNaKE6\nV2p0jfqJ8k9tJlNy2zpdHDimMFowZf+5+TEkM8utY1f0iuBaXhm0oQoKiH9mMLoB\n2Xvl9BD7AgMBAAECggEACMHvOXiyTuyApV2m7PmNjN4v3cTbmcyYx7m1Q9dSDdK+\nb7KBycD3EVUjiJ7FQ1fgPuaV54He4lbJTQPb0Z/pagCamZs1mUTF7KCaNDVF0c1M\npFsfg01q61W9iQ9Y0hA5eOCw0JhRQACpcIYfMDU/5TFDrG272MHrI9wz7EG1ASul\namX0437zdNqS9ITjpvulFoYzRcdG554r2N+7GCL55PMfGcF9LyRywh3BOzJrdhOo\n+a2HCEG9lm9Q01bfILIXo0pVm/KSwX3y1RbEt4ZhZtIIhI5+ka8KUOCi9RzNXlrO\nUUJlDGoqjUsfLDVyQQg5ofHNqDuiJmLH2eLYm2HhGQKBgQDcolJK01KA5Ly43lia\nqALhddnmE5Uxd1jn9jp0MsdFg0mVUsnMRgdu7i4s+ZKLuEQldos9Pk0aGh0C2iEY\nrkE0RmWrQwVtDGXpefxAxcV8mz60V9PCfXT9BPT3+370x8pIQSmFlGhJk8TFDK1G\n+kErYSJJQ3Rj7GSBW7TZt4uZowKBgQDS6IIrVynjnxkcSH+IrnnL10t0MMgAkWoK\nfQxJ1+oyu3sX5eKe1SL9HNWrF/+QBS+XW4w1CwXmHpWJClr2/fhqTe+tSpu8+nzV\nbCZRBZFn/CAEwnYG85D3lZ0HsKvsy04cu0bov+WJXBacXWrWglRApVjsJpqfjF61\nNcExgazQyQKBgQCNbrRn6N07aOWdcFLGGSt3kc9zkFwUEJh6YboI4MAizE0wHpjj\njISZVK9e/0E0tZNhnIMXaEeOkuzD9kY/Bv0fYH0t8tGYnNj7eMn+T4kQHohsnNxP\nEZMb2sCZ8qroiOYfuT2/tmm/uKzrT/wHwsZh42tSIZ6Lq26mCb59zg38FwKBgCC+\npo8SDlffuKdSfjJ7XD+Qoo9cj4C/Euaj+YdxdVQBFaBlOaUNVExV8LqKlEwI8hWe\nygrmNjk/IFpReEQGtE3U4dRW1A0oGr+L9fr4UVYCp/n1MxvrLuOxn9q0zEyMWAlP\n7jduq7WCzaPjQRYiz+/lfAPWDoWc5otd2CvWhT05AoGAQu0XEemw9L+dnyd4WW5v\n1HjZ4y4qBQP0Onc+Zwc/+yQ3YVvWDxRurwPZ/lyXfY8qhWL5AsUfNhSsyG9rOiHc\nnwrdCGqpgp+sH7Tbr8SHH936UGHxEdNapyof0dSv7XwyrEKN0YOK9ssH6cuA8td6\naM50hWiGP34YF9S2D3vMe3I=\n-----END PRIVATE KEY-----\n",
+  "client_email": "budgiex@my-accountant-178109.iam.gserviceaccount.com",
+  "client_id": "107920185504008963092",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/budgiex%40my-accountant-178109.iam.gserviceaccount.com"
+}

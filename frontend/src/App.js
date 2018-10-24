@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
 import Camera from 'react-camera';
+import { analyseImage } from './services/analyseImage';
 import './App.css';
+import { __await } from 'tslib';
 
 const style = {
   preview: {
@@ -31,6 +32,7 @@ const style = {
 
 class App extends Component {
   takePicture() {
+    analyseImage();
     this.camera.capture()
     .then(blob => {
       this.img.src = URL.createObjectURL(blob);
