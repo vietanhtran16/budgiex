@@ -1,25 +1,64 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Button from '@material-ui/core/Button';
+import Camera from 'react-camera';
 import './App.css';
 
+const style = {
+  preview: {
+    position: 'relative',
+    maxWidth: '50%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
+  captureContainer: {
+    display: 'flex',
+    position: 'absolute',
+    justifyContent: 'center',
+    zIndex: 1,
+    bottom: 0,
+    width: '100%'
+  },
+  captureButton: {
+    backgroundColor: '#fff',
+    borderRadius: '50%',
+    height: 56,
+    width: 56,
+    color: '#000',
+    margin: 20
+  }
+  
+};
+
 class App extends Component {
+  takePicture() {
+    this.camera.capture()
+    .then(blob => {
+      this.img.src = URL.createObjectURL(blob);
+      console.log(this.img);
+      this.img.onload = () => { URL.revokeObjectURL(this.src); }
+    })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div style={style.container}>
+        <Camera
+          style={style.preview}
+          ref={(cam) => {
+            this.camera = cam;
+          }}
+        >
+          <div style={style.captureContainer} onClick={() => this.takePicture()}>
+            <div style={style.captureButton} />
+          </div>
+        </Camera>
+        <div style={style.preview}>
+          <img
+            ref={(img) => {
+              this.img = img;
+            }}
+          />
+        </div>
       </div>
     );
   }
