@@ -8,7 +8,7 @@
     "HelloLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/budgiex-dev-hello"
+        "LogGroupName": "/aws/lambda/aws-nodejs-dev-hello"
       }
     },
     "IamRoleLambdaExecution": {
@@ -37,7 +37,7 @@
                 "-",
                 [
                   "dev",
-                  "budgiex",
+                  "aws-nodejs",
                   "lambda"
                 ]
               ]
@@ -52,7 +52,7 @@
                   ],
                   "Resource": [
                     {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/budgiex-dev-hello:*"
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/aws-nodejs-dev-hello:*"
                     }
                   ]
                 },
@@ -63,7 +63,7 @@
                   ],
                   "Resource": [
                     {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/budgiex-dev-hello:*:*"
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/aws-nodejs-dev-hello:*:*"
                     }
                   ]
                 }
@@ -76,7 +76,7 @@
           "Fn::Join": [
             "-",
             [
-              "budgiex",
+              "aws-nodejs",
               "dev",
               "us-east-1",
               "lambdaRole"
@@ -92,9 +92,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/budgiex/dev/1540418990646-2018-10-24T22:09:50.646Z/budgiex.zip"
+          "S3Key": "serverless/aws-nodejs/dev/1540421008169-2018-10-24T22:43:28.169Z/aws-nodejs.zip"
         },
-        "FunctionName": "budgiex-dev-hello",
+        "FunctionName": "aws-nodejs-dev-hello",
         "Handler": "handler.hello",
         "MemorySize": 1024,
         "Role": {
@@ -111,14 +111,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "HelloLambdaVersionWnvGxY3VcPeZ7YINVjQOCGeQnb57P7wvT0OORzXIUM": {
+    "HelloLambdaVersionBQ2R63pQDGtu10m2TQPoF5Rux2b561XYtx7gWfaEA": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "HelloLambdaFunction"
         },
-        "CodeSha256": "Xc6Lkh+vCxVcvzx8bEQLP8Ibe7C6FAgV7lqJ+tKFuC0="
+        "CodeSha256": "gzvUBHNwoUHyKYer47NJzrWLF29jY19WSR2ZB4kSlyw="
       }
     }
   },
@@ -131,7 +131,7 @@
     "HelloLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HelloLambdaVersionWnvGxY3VcPeZ7YINVjQOCGeQnb57P7wvT0OORzXIUM"
+        "Ref": "HelloLambdaVersionBQ2R63pQDGtu10m2TQPoF5Rux2b561XYtx7gWfaEA"
       }
     }
   }
