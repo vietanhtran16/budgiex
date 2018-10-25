@@ -3,7 +3,13 @@ const vision = require("@google-cloud/vision");
 const app = express();
 const port = 8000;
 
+
 app.get("/", (req, res) => res.send("Hello World!"));
+
+app.get("/hello", (req, res) => {
+  var helloWorldRequestProcessor = require("./request_handling/HelloWorldRequestProcess");
+  helloWorldRequestProcessor.processRequest(req, res);
+});
 
 app.get("/analyseImage", (req, res) => {
   const client = new vision.ImageAnnotatorClient();

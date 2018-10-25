@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@google-cloud/vision": "^0.22.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "promise-mysql": "^3.3.1"
   }
 }
