@@ -7,6 +7,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
+                <p>Welcome to your Dashboard</p>
                 <Columns>
                     <div>
                         <p> Budget Summary for {}</p>
