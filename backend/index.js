@@ -8,7 +8,7 @@ app.get("/", (req, res) => res.send("Hello World!"));
 app.get("/analyseImage", (req, res) => {
   const client = new vision.ImageAnnotatorClient();
   client
-    .documentTextDetection("https://s3-ap-southeast-2.amazonaws.com/budgiex/d13da114-e39e-4967-a1ad-00b3a38e4b42.jpeg")
+    .documentTextDetection(`https://s3-ap-southeast-2.amazonaws.com/budgiex/${req.query["fileName"]}`)
     .then(results => {
       const detections = results[0].fullTextAnnotation;
       res.send(detections);
