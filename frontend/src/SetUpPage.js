@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Icons, Dropdown } from "@starbird/myob-widgets";
+import { Icons, Dropdown } from "@myob/myob-widgets";
 import './App.css';
 
 class Page extends Component {
