@@ -5,7 +5,7 @@ import './App.css';
 class SplashPage extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <p>Welcome to</p>
                 <img src={require('./images/budgiex-logo.png')} alt={"logo"}/>
                 <p>Budgeting made simple.</p>
