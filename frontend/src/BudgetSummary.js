@@ -30,7 +30,7 @@ class App extends Component {
 
         return (
 
-            <div>
+            <Card>
                 <Button type="secondary">Edit Budget</Button>
                 <Table.Body>
                     <Table.Header>
@@ -40,7 +40,7 @@ class App extends Component {
                         <Table.HeaderItem>REMAINDER</Table.HeaderItem>
                     </Table.Header>
                     {masterCategoryList}</Table.Body>
-            </div>
+            </Card>
 
         );
     }

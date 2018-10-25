@@ -5,6 +5,11 @@ class RecentExpenses extends Component {
     render() {
         return (
             <div>
+                <Card>
+                    <Button type="primary">Add Expenses</Button>
+
+
+                </Card>
             </div>
         );
     }
