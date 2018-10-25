@@ -10,4 +10,4 @@ WORKDIR /app/backend
 RUN npm rebuild
 ENV GOOGLE_APPLICATION_CREDENTIALS=./cloudvisionapikey.json
 
-CMD [ "node", "index.js" ]
+ENTRYPOINT [ "node", "index.js" ]

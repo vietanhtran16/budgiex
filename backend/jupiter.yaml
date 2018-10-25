@@ -1,0 +1,56 @@
+---
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: "budgiex-services-hackday-deployment"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "budgiex-services-hackday"
+  template:
+    metadata:
+      labels:
+        app: "budgiex-services-hackday"
+    spec:
+      containers:
+        - image: "451515956712.dkr.ecr.ap-southeast-2.amazonaws.com/budgiex-services:4"
+          name: budgiex-services
+          ports:
+            - containerPort: 8000
+ 
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/scrape: "true"
+  name: "budgiex-services-hackday-service"
+spec:
+  ports:
+    - port: 80
+      targetPort: 8000
+  selector:
+    app: "budgiex-services-hackday"
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    "kubernetes.io/tls-acme": "true"
+  name: "budgiex-services-hackday-ingress"
+spec:
+  rules:
+    - host: "budgiex-services-hackday.svc.platform.myobdev.com"
+      http:
+        paths:
+          - backend:
+              serviceName: "budgiex-services-hackday-service"
+              servicePort: 80
+            path: /
+  tls:
+    - hosts:
+        - "budgiex-services-hackday.svc.platform.myobdev.com"
+      secretName: "budgiex-services-hackday-tls"

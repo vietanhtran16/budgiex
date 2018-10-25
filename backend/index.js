@@ -1,7 +1,7 @@
 const express = require("express");
 const vision = require("@google-cloud/vision");
 const app = express();
-const port = 8888;
+const port = 8000;
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
