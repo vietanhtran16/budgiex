@@ -14,7 +14,7 @@ spec:
         app: "budgiex-services-hackday"
     spec:
       containers:
-        - image: "451515956712.dkr.ecr.ap-southeast-2.amazonaws.com/budgiex-services:4"
+        - image: "451515956712.dkr.ecr.ap-southeast-2.amazonaws.com/budgiex-services:5"
           name: budgiex-services
           ports:
             - containerPort: 8000
