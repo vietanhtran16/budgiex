@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Input, Button} from '@myob/myob-widgets';
+import {Input, Button} from '@material-ui/core';
 import './App.css';
 
 class SplashPage extends Component {

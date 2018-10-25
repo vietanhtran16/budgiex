@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Table, Icons, Button, Card, Columns} from '@myob/myob-widgets';
+import {Table, Icons, Button, Card} from '@material-ui/core';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +7,6 @@ class App extends Component {
         return (
             <div>
                 <Button type="secondary">Edit Budget</Button>
-                <Columns></Columns>
             </div>
         );
     }

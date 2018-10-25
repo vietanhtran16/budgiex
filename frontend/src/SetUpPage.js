@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Table, Icons, Button, Card, Columns} from '@myob/myob-widgets';
+import {Table, Button, Card, Columns} from '@material-ui/core';
 import './App.css';
 
 class SetUpPage extends Component {
@@ -28,7 +28,7 @@ class SetUpPage extends Component {
                     <Table.CollapsibleRow
                         header={
                             <Table.Row>
-                                <Table.RowItem>{masterCategory}</Table.RowItem><Table.RowItem>$0</Table.RowItem><Table.RowItem><Icons.Caret/></Table.RowItem>
+                                <Table.RowItem>{masterCategory}</Table.RowItem><Table.RowItem>$0</Table.RowItem><Table.RowItem></Table.RowItem>
                             </Table.Row>}
                     >
 
@@ -42,9 +42,7 @@ class SetUpPage extends Component {
         });
         return (
             <div>
-                <div id="back-button"><Icons.LeftChevron size="2em"/>Back</div>
-                <Columns type="two"><span className="dollar">$</span>
-                    <p>Available budget(Monthly)</p></Columns>
+                <div id="back-button">Back</div>
 
                 <p id="amount">$3000</p>
                 <Table.Body>
@@ -53,7 +51,7 @@ class SetUpPage extends Component {
                         <Table.HeaderItem>BUDGETED</Table.HeaderItem>
                     </Table.Header>
                     {masterCategoryList}
-                    {<Table.Row><Table.RowItem><Icons.Add size="1em"/> Add Category</Table.RowItem></Table.Row>}
+                    {<Table.Row><Table.RowItem>Add Category</Table.RowItem></Table.Row>}
                 </Table.Body>
                 <Button id="save-button" type="primary">Save</Button>
             </div>
