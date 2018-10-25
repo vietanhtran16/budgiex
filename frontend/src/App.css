@@ -1,3 +1,7 @@
+body {
+  background-color: white !important;
+}
+
 .App {
   text-align: center;
 }
@@ -39,22 +43,27 @@
 }
 
 .theme {
-  color: rgb(46,113,223)
+  color: rgb(46,113,223) !important;
 }
 
 .theme-title {
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 50px !important;
+  font-weight: bold !important;
 }
 
 .theme-title-leading {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 20px !important;
+  font-weight: bold !important;
 }
 
 .theme-subtitle {
-  font-size: 15px;
-  color: #686868;
+  font-size: 15px !important;
+  color: #686868 !important;
+}
+
+.btn-primary {
+  background-color: rgb(46,113,223) !important;
+  border-color: rgb(46,113,223) !important;
 }
 
 @media only screen and (min-width: 425px) {
