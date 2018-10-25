@@ -6,4 +6,4 @@ jspm_packages
 .serverless
 cloudvisionapikey.json
 
-.idea/*
+.idea/workspace.xml
