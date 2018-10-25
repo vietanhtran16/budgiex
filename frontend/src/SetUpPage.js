@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Table, Icons, Button, Card, Columns} from '@myob/myob-widgets';
+import {Table, Icons, Button, Card, Columns, TextArea} from '@myob/myob-widgets';
 import './App.css';
 
 class SetUpPage extends Component {
@@ -35,6 +35,7 @@ class SetUpPage extends Component {
                         {categoriesJson[masterCategory].map((subCategory) => {
                             return <Card><span className="dot"/>
                                 {Object.keys(subCategory)}</Card>
+
                         })}
 
                     </Table.CollapsibleRow>

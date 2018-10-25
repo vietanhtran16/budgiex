@@ -5,8 +5,17 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
-                <p> Budget Summary for {month}</p>
-                <BudgetSummary/>
+                <Columns>
+                    <div>
+                        <p> Budget Summary for {month}</p>
+                        <BudgetSummary/>
+                    </div>
+                    <div>
+                        <p>Recent Expenses</p>
+
+                    </div>
+                </Columns>
+
             </div>
         );
     }
