@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Table, Icons, Button, Card} from '@myob/myob-widgets';
+import {Table, Icons, Button, Card, Columns} from '@myob/myob-widgets';
 import './App.css';
 
 class SetUpPage extends Component {
@@ -22,9 +22,7 @@ class SetUpPage extends Component {
             "Personal": [],
         };
 
-
         let masterCategoryList = Object.keys(categoriesJson).map((masterCategory) => {
-            let menuItems;
             return (
                 <div id="collapsable-row">
                     <Table.CollapsibleRow
@@ -35,9 +33,6 @@ class SetUpPage extends Component {
                     >
 
                         {categoriesJson[masterCategory].map((subCategory) => {
-                            console.log(subCategory);
-                            const keys = Object.keys(subCategory);
-                            console.log(keys);
                             return <Card><span className="dot"/>
                                 {Object.keys(subCategory)}</Card>
                         })}
@@ -48,7 +43,10 @@ class SetUpPage extends Component {
         return (
             <div>
                 <div id="back-button"><Icons.LeftChevron size="2em"/>Back</div>
+                <Columns type="two"><span className="dollar">$</span>
+                    <p>Available budget(Monthly)</p></Columns>
 
+                <p id="amount">$3000</p>
                 <Table.Body>
                     <Table.Header>
                         <Table.HeaderItem>MASTER CATEGORIES</Table.HeaderItem>
