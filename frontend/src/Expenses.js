@@ -8,7 +8,6 @@ class RecentExpenses extends Component {
                 <Card>
                     <Button type="primary">Add Expenses</Button>
 
-
                 </Card>
             </div>
         );

@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {Table, Icons, Button, Card, Columns} from '@myob/myob-widgets';
+import PieChart from 'react-simple-pie-chart';
 import './App.css';
 
-class App extends Component {
+class BudgetSummary extends Component {
     render() {
         let categoriesJson = {
             "Everyday Expenses": [
@@ -28,6 +29,20 @@ class App extends Component {
                 </div>)
         });
 
+        let pie=
+        <PieChart
+        slices={[
+          {
+            color: '#000099',
+            value: 10,
+          },
+          {
+            color: '#9999ff',
+            value: 20,
+          },
+        ]}
+      />
+
         return (
 
             <Card>
@@ -46,4 +61,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default BudgetSummary;
