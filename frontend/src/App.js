@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Camera from 'react-camera';
-import { analyseImage } from './services/analyseImage';
 import './App.css';
 
 const style = {
@@ -31,7 +30,6 @@ const style = {
 
 class App extends Component {
   takePicture() {
-    analyseImage();
     this.camera.capture()
     .then(blob => {
       this.img.src = URL.createObjectURL(blob);
