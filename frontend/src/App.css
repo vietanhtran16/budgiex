@@ -66,6 +66,10 @@ body {
   border-color: rgb(46,113,223) !important;
 }
 
+.table-data__row {
+  padding: 0px !important;
+}
+
 @media only screen and (min-width: 425px) {
   .hero-container {
     padding: 200px 0px;

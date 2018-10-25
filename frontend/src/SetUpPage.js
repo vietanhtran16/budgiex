@@ -28,7 +28,7 @@ class SetUpPage extends Component {
                     <Table.CollapsibleRow
                         header={
                             <Table.Row>
-                                <Table.RowItem>{masterCategory}</Table.RowItem><Table.RowItem>$0</Table.RowItem><Table.RowItem><Icons.Caret/></Table.RowItem>
+                                <Table.RowItem>{masterCategory}</Table.RowItem><Table.RowItem>$0 <span className="pull-right"><Icons.Caret/></span></Table.RowItem>
                             </Table.Row>}
                     >
 
@@ -44,16 +44,17 @@ class SetUpPage extends Component {
         return (
             <div>
                 <div id="back-button"><Icons.LeftChevron size="2em"/>Back</div>
-                <Columns type="two"><span className="dollar">$</span>
-                    <p>Available budget(Monthly)</p></Columns>
-
+                <span className="dollar">$</span>
+                    <p>Available budget(Monthly)</p>
                 <p id="amount">$3000</p>
                 <Table.Body>
                     <Table.Header>
                         <Table.HeaderItem>MASTER CATEGORIES</Table.HeaderItem>
                         <Table.HeaderItem>BUDGETED</Table.HeaderItem>
                     </Table.Header>
-                    {masterCategoryList}
+                    <div className="theme-table-row">
+                        {masterCategoryList}
+                    </div>
                     {<Table.Row><Table.RowItem><Icons.Add size="1em"/> Add Category</Table.RowItem></Table.Row>}
                 </Table.Body>
                 <Button id="save-button" type="primary">Save</Button>
