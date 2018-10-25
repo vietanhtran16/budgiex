@@ -1,7 +1,5 @@
 FROM node:alpine
 
-
-
 COPY package.json /packages/package.json
 COPY yarn.lock /packages/yarn.lock
 
