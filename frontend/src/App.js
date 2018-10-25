@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Camera from 'react-camera';
 import { analyseImage } from './services/analyseImage';
 import './App.css';
-import { __await } from 'tslib';
 
 const style = {
   preview: {
