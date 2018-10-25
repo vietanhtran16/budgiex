@@ -8,7 +8,7 @@ import Dashboard from "./Dashboard";
 class App extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <SplashPage/>
             </div>
         );
