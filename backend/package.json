@@ -2,7 +2,7 @@
   "name": "budgiex",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "serverless": "^1.32.0"
   },
   "scripts": {
