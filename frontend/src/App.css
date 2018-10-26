@@ -1,3 +1,7 @@
+body {
+  background-color: white !important;
+}
+
 .App {
   text-align: center;
 }
@@ -19,6 +23,81 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dollar {
+  height: 100px;
+  width: 100px;
+}
+
+.hero-container {
+  padding: 200px 15px;
+}
+
+.theme {
+  color: rgb(46,113,223) !important;
+}
+
+.theme-title {
+  font-size: 50px !important;
+  font-weight: bold !important;
+}
+
+.theme-title-leading {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.theme-subtitle {
+  font-size: 15px !important;
+  color: #686868 !important;
+}
+
+.btn-primary {
+  background-color: rgb(46,113,223) !important;
+  border-color: rgb(46,113,223) !important;
+}
+
+.table-data__row {
+  padding: 0px !important;
+}
+
+.dollar {
+  font-size: 50px;
+  color: #fff;
+  background-color: rgb(46,113,223);
+  border-radius: 50%;
+  padding: 10px 25px;
+}
+
+#amount {
+  font-size: 40px;
+}
+
+#amount-text {
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 425px) {
+  .hero-container {
+    padding: 200px 0px;
+  }
+
+  .theme-title {
+    font-size: 80px;
+  }
+
+  .theme-title-leading {
+    font-size: 30px;
+  }
 }
 
 @keyframes App-logo-spin {
