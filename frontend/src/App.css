@@ -70,6 +70,22 @@ body {
   padding: 0px !important;
 }
 
+.dollar {
+  font-size: 50px;
+  color: #fff;
+  background-color: rgb(46,113,223);
+  border-radius: 50%;
+  padding: 10px 25px;
+}
+
+#amount {
+  font-size: 40px;
+}
+
+#amount-text {
+  font-size: 24px;
+}
+
 @media only screen and (min-width: 425px) {
   .hero-container {
     padding: 200px 0px;

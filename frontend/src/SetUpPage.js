@@ -45,7 +45,7 @@ class SetUpPage extends Component {
             <div>
                 <div id="back-button"><Icons.LeftChevron size="2em"/>Back</div>
                 <span className="dollar">$</span>
-                    <p>Available budget(Monthly)</p>
+                <p id="amount-text" className="mb-0">Available budget <span style={{"fontSize": 12}}>(Monthly)</span></p>
                 <p id="amount">$3000</p>
                 <Table.Body>
                     <Table.Header>

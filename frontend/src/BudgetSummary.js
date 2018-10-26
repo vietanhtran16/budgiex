@@ -41,12 +41,13 @@ class BudgetSummary extends Component {
             value: 20,
           },
         ]}
-      />
+      />;
 
         return (
 
             <Card>
                 <Button type="secondary">Edit Budget</Button>
+                {pie}
                 <Table.Body>
                     <Table.Header>
                         <Table.HeaderItem>MASTER CATEGORIES</Table.HeaderItem>
