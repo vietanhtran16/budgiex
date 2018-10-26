@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import {Route} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import {Input, Button} from '@myob/myob-widgets';
 import './App.css';
 import SetUpPage from './SetUpPage';
 
 class SplashPage extends Component {
     render() {
-        const setUpPage =  <Route path="/SetUpPage" component={SetUpPage}/>;
+    const setUpPage = () => { <Switch><Route path="/SetUpPage" component={SetUpPage}/></Switch> };
         return (
             <div className="hero-container text-center mx-auto">
                 <div className="row">
