@@ -6,7 +6,7 @@ import SetUpPage from './SetUpPage';
 
 class SplashPage extends Component {
     render() {
-    const setUpPage = () => { <Switch><Route path="/SetUpPage" component={SetUpPage}/></Switch> };
+    const setUpPage = () => { return <Switch><Route path='/SetUpPage' component={SetUpPage}/></Switch> };
         return (
             <div className="hero-container text-center mx-auto">
                 <div className="row">

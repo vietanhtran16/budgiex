@@ -46,16 +46,32 @@ class BudgetSummary extends Component {
         return (
 
             <Card>
-                <Button type="secondary">Edit Budget</Button>
-                {pie}
-                <Table.Body>
-                    <Table.Header>
-                        <Table.HeaderItem>MASTER CATEGORIES</Table.HeaderItem>
-                        <Table.HeaderItem>BUDGETED</Table.HeaderItem>
-                        <Table.HeaderItem>SPENT</Table.HeaderItem>
-                        <Table.HeaderItem>REMAINDER</Table.HeaderItem>
-                    </Table.Header>
-                    {masterCategoryList}</Table.Body>
+                <div className="text-right">
+                    <Button type="secondary">Edit Budget</Button>
+                </div>
+                <div className="row">
+                    <div className="col-md-4">
+                        {pie}
+                    </div>
+                    <div className="col-md-8">
+                        <span className="my-2">Total budget</span><br />
+                        <span className="my-2">Total spent</span><br />
+                        <hr className="my-3" />
+                        <span className="my-2">Remaining</span><br />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-12">
+                        <Table.Body>
+                            <Table.Header>
+                                <Table.HeaderItem>MASTER CATEGORIES</Table.HeaderItem>
+                                <Table.HeaderItem>BUDGETED</Table.HeaderItem>
+                                <Table.HeaderItem>SPENT</Table.HeaderItem>
+                                <Table.HeaderItem>REMAINDER</Table.HeaderItem>
+                            </Table.Header>
+                            {masterCategoryList}</Table.Body>
+                    </div>
+                </div>
             </Card>
 
         );
