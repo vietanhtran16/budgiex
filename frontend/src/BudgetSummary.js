@@ -4,6 +4,10 @@ import PieChart from 'react-simple-pie-chart';
 import './App.css';
 
 class BudgetSummary extends Component {
+    constructor(props){
+        super();
+        this.state = { totalBudget: 2, totalSpent: 1}
+    }
     render() {
         let categoriesJson = {
             "Everyday Expenses": [
@@ -54,10 +58,10 @@ class BudgetSummary extends Component {
                         {pie}
                     </div>
                     <div className="col-md-8">
-                        <span className="my-2">Total budget</span><br />
-                        <span className="my-2">Total spent</span><br />
+                        <span className="my-2">Total budget ${Math.round(this.state.totalBudget)} </span><br />
+                        <span className="my-2">Total spent    ${Math.round(this.state.totalSpent)}</span><br />
                         <hr className="my-3" />
-                        <span className="my-2">Remaining</span><br />
+                        <span className="my-2">Remaining  ${Math.round(this.state.totalBudget - this.state.totalSpent)}</span><br />
                     </div>
                 </div>
                 <div className="row">
