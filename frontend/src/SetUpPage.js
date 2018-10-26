@@ -33,7 +33,7 @@ class SetUpPage extends Component {
                     >
 
                         {categoriesJson[masterCategory].map((subCategory) => {
-                            return <Card><span className="dot"/>
+                            return <Card><span className="dot mr-3"/>
                                 {Object.keys(subCategory)}</Card>
 
                         })}
@@ -44,9 +44,13 @@ class SetUpPage extends Component {
         return (
             <div>
                 <div id="back-button"><Icons.LeftChevron size="2em"/>Back</div>
-                <span className="dollar">$</span>
-                <p id="amount-text" className="mb-0">Available budget <span style={{"fontSize": 12}}>(Monthly)</span></p>
-                <p id="amount">$3000</p>
+                <div className="row">
+                    <div className="col-3 mt-4"><span className="dollar">$</span></div>
+                    <div className="col">
+                        <p id="amount-text" className="mb-0">Available budget <span style={{"fontSize": 12}}>(Monthly)</span></p>
+                        <p id="amount">$3000</p>
+                    </div>
+                </div>
                 <Table.Body>
                     <Table.Header>
                         <Table.HeaderItem>MASTER CATEGORIES</Table.HeaderItem>
@@ -57,7 +61,7 @@ class SetUpPage extends Component {
                     </div>
                     {<Table.Row><Table.RowItem><Icons.Add size="1em"/> Add Category</Table.RowItem></Table.Row>}
                 </Table.Body>
-                <Button id="save-button" type="primary">Save</Button>
+                <Button id="save-button" className="btn btn-primary btn-block mt-5" type="primary">Save</Button>
             </div>
         );
     }
