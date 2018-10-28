@@ -1,0 +1,10 @@
+TypeError: itemDict.push is not a function
+    at client.documentTextDetection.then.results (/Users/maxtang/Projects/hackdays/budgiex/backend/util/ProcessReceipt.js:34:22)
+TOTAL: 28.11
+[ seller: 'OTARGET',
+  items: [ { name: 'C9 ACTIVEWEA T ', cost: '14.99' },
+    { name: '284101383 NOOSA. FN ', cost: '4.78' },
+    { name: '284101594 DANNON FN ', cost: '2.00' },
+    { name: '052021284 NAIL POLISH T ', cost: '4.49' },
+    { name: 'PAPER BAG FEE (1) ', cost: '0.10' },
+    { name: 'T = CA TAX 9.0000% on $19.48 ', cost: '1.75' } ] ]
