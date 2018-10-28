@@ -1,18 +1,21 @@
-import React, {Component} from 'react';
-import SplashPage from './SplashPage';
-import SetUpPage from './SetUpPage'
-import BudgetSummary from './BudgetSummary'
-import './App.css';
-import Dashboard from "./Dashboard";
+import React, { Component } from "react";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import SplashPage from "./SplashPage";
+import SetUpPage from "./SetUpPage";
+import "./App.css";
 
 class App extends Component {
-    render() {
-        return (
-            <div className="container">
-                <Dashboard/>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <Router>
+        <div>
+          <Route exact path="/SetUp" component={SetUpPage} />
+          <Route exact path="/" component={SplashPage} />
+        </div>
+      </Router>
+      
+    );
+  }
 }
 
 export default App;
