@@ -33,7 +33,7 @@ class SetUpPage extends Component {
                     >
 
                         {categoriesJson[masterCategory].map((subCategory) => {
-                            return <Card><span className="dot mr-3"/>
+                            return <Card><span className="dot mr-3" styles={{}}/>
                                 {Object.keys(subCategory)}</Card>
 
                         })}
