@@ -24,14 +24,32 @@ functions:
         - http:
             path: save
             method: post
-            cors: true
+            cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+ 
   get:
     handler: handler.get
     events:
         - http:
             path: get
             method: get
-            cors: true
+            cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+ 
 
 resources:
   Resources:
